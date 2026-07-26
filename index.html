@@ -18,13 +18,12 @@
             align-items: center;
             /* 字体统一：微软雅黑 + 后备 */
             font-family: 'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Helvetica Neue', sans-serif;
-            background-color: hsl(106, 100%, 91%);
+            background-color: #ffffff;
             background-image: url('./f.png');
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;    /* 滚动时背景固定，更有沉浸感 */
-            padding: 30px 20px;
         }
 
         .game-hub {
@@ -145,30 +144,17 @@
         }
 
         /* 若背景图加载失败，保留深色底 + 纹理 */
-        body::before {
+/*         body::before {
             content: '';
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 30% 40%, #004010, #002008);
+            background: radial-gradient(circle at 30% 40%, #000000, #000000);
             z-index: -2;
         }
-
-        /* 在背景图之上叠加一层极淡的柔光，使文字更易读（保留PNG细节） */
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(8, 10, 18, 0.15);
-            backdrop-filter: brightness(0.98) saturate(0.8);
-            -webkit-backdrop-filter: brightness(0.98) saturate(0.8);
-            z-index: -1;
-        }
+ */
     </style>
 </head>
 <body>
